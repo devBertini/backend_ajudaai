@@ -13,7 +13,7 @@ export default class CreateDepartmentValidator {
   })
 
   public messages: CustomMessages = {
-    required: 'The {{ field }} is required to create a new enterprise',
+    required: 'The {{ field }} is required to create a new department',
     alpha: 'This {{ field }} cannot contain characters other than the letters of the alphabet.',
   }
 }
