@@ -34,7 +34,7 @@ Route.group(() => {
 
   //Department Routes
   Route.get('/department/:enterprise_id', 'DepartmentsController.index')
-  Route.get('/department/:id', 'DepartmentsController.show')
+  Route.get('/department/:enterprise_id/:id', 'DepartmentsController.show')
   Route.post('/department', 'DepartmentsController.store')
   Route.put('/department/:id', 'DepartmentsController.update')
   Route.delete('/department/:id', 'DepartmentsController.destroy')
