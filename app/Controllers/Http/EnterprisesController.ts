@@ -2,6 +2,7 @@ import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Database from '@ioc:Adonis/Lucid/Database'
 import Enterprise from 'App/Models/Enterprise'
 import CreateEnterpriseValidator from 'App/Validators/Enterprise/CreateEnterpriseValidator'
+import UpdateEnterpriseValidator from 'App/Validators/Enterprise/UpdateEnterpriseValidator'
 
 export default class EnterprisesController {
   public async index({ request, response }: HttpContextContract) {
@@ -58,12 +59,12 @@ export default class EnterprisesController {
   }
 
   public async update({ request, response }: HttpContextContract) {
-    const { name } = request.body()
+    const { name } = await request.validate(UpdateEnterpriseValidator)
 
     const enterprise = await Enterprise.findOrFail(request.param('id'))
 
     try {
-      if (enterprise && enterprise.name !== name) {
+      if (name && name !== enterprise.name) {
         enterprise.name = name
       }
 
