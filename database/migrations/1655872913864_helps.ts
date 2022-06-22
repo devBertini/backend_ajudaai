@@ -12,7 +12,7 @@ export default class extends BaseSchema {
       table.integer('user').unsigned().references('users.id').notNullable()
       table.integer('team').unsigned().references('teams.id').notNullable()
       table.integer('helper').unsigned().references('users.id').notNullable()
-      table.integer('status').unsigned().references('status.id').notNullable()
+      table.integer('status').unsigned().references('statuses.id').notNullable()
       table.timestamp('created_at', { useTz: true })
       table.timestamp('updated_at').nullable()
     })
