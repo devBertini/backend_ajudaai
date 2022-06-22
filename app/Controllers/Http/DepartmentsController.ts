@@ -46,7 +46,7 @@ export default class DepartmentsController {
       if (department) {
         response.status(200).send(department)
       } else {
-        response
+        return response
           .status(400)
           .send({ error: 'Unable to fetch the department entered. Please try again later.' })
       }
@@ -62,7 +62,7 @@ export default class DepartmentsController {
       const department = await Department.find(request.param('id'))
 
       if (!department) {
-        response.status(404).send({
+        return response.status(404).send({
           warning:
             'The department entered in the search was not found. Please check and try again.',
         })
@@ -93,7 +93,7 @@ export default class DepartmentsController {
       if (await department.save()) {
         response.status(200).send(department)
       } else {
-        response
+        return response
           .status(400)
           .send({ error: 'Unable to update the informed department. Please try again later.' })
       }
