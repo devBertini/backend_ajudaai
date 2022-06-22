@@ -7,13 +7,13 @@ import UpdateStatusValidator from 'App/Validators/Status/UpdateStatusValidator'
 export default class StatusesController {
   public async index({ request, response }: HttpContextContract) {
     try {
-      const teams = await Database.from('statuses').paginate(request.qs().page, request.qs().qtd)
+      const status = await Database.from('statuses').paginate(request.qs().page, request.qs().qtd)
 
-      return response.status(200).send(teams.toJSON())
+      return response.status(200).send(status.toJSON())
     } catch (error) {
       return response
         .status(500)
-        .send({ error: 'Unable to search for teams. Please try again later.' })
+        .send({ error: 'Unable to search for status. Please try again later.' })
     }
   }
 
