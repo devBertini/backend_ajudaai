@@ -9,7 +9,7 @@ export default class CreateTeamValidator {
       rules.required(),
       rules.alpha({ allow: ['space', 'underscore', 'dash'] }),
     ]),
-    deparment: schema.number([rules.required()]),
+    department: schema.number([rules.required()]),
   })
 
   public messages: CustomMessages = {
