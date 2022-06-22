@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center"> 
-	 Backend - Desligamento Financeiro 🚀<br> v0.2 <br><br> 🚧 em construção... 🚧
+	 Backend - Ajudaa[i 🚀<br> v0.2 <br><br> 🚧 em construção... 🚧
 </h4>
 
 <p align="center">
