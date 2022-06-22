@@ -1,6 +1,8 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Database from '@ioc:Adonis/Lucid/Database'
 import Status from 'App/Models/Status'
+import CreateStatusValidator from 'App/Validators/Status/CreateStatusValidator'
+import UpdateStatusValidator from 'App/Validators/Status/UpdateStatusValidator'
 
 export default class StatusesController {
   public async index({ request, response }: HttpContextContract) {
