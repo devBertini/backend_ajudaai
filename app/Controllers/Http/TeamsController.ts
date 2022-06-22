@@ -42,7 +42,7 @@ export default class TeamsController {
       if (team) {
         response.status(200).send(team)
       } else {
-        response
+        return response
           .status(400)
           .send({ error: 'Unable to fetch the team entered. Please try again later.' })
       }
@@ -58,7 +58,7 @@ export default class TeamsController {
       const team = await Team.find(request.param('id'))
 
       if (!team) {
-        response.status(404).send({
+        return response.status(404).send({
           warning: 'The team entered in the search was not found. Please check and try again.',
         })
       } else {
@@ -88,7 +88,7 @@ export default class TeamsController {
       if (await team.save()) {
         response.status(200).send(team)
       } else {
-        response
+        return response
           .status(400)
           .send({ error: 'Unable to update the informed team. Please try again later.' })
       }
