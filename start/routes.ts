@@ -25,4 +25,11 @@ Route.group(() => {
   Route.post('/team', 'TeamsController.store')
   Route.put('/team/:id', 'TeamsController.update')
   Route.delete('/team/:id', 'TeamsController.destroy')
+
+  //User Routes
+  Route.get('/user/:team_id', 'UsersController.index')
+  Route.get('/user/:team_id/:id', 'UsersController.show')
+  Route.post('/user', 'UsersController.store')
+  Route.put('/user/:id', 'UsersController.update')
+  Route.delete('/user/:id', 'UsersController.destroy')
 }).prefix('/api')
