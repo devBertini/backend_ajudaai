@@ -9,7 +9,7 @@ export default class TeamsController {
   public async index({ request, response }: HttpContextContract) {
     try {
       const teams = await Database.from('teams')
-        .where('department', request.param('deparment_id'))
+        .where('department', request.param('department_id'))
         .paginate(request.qs().page, request.qs().qtd)
 
       return response.status(200).send(teams.toJSON())

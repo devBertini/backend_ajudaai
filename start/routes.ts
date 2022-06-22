@@ -38,4 +38,11 @@ Route.group(() => {
   Route.post('/department', 'DepartmentsController.store')
   Route.put('/department/:id', 'DepartmentsController.update')
   Route.delete('/department/:id', 'DepartmentsController.destroy')
+
+  //Team Routes
+  Route.get('/team/:department_id', 'TeamsController.index')
+  Route.get('/team/:department_id/:id', 'TeamsController.show')
+  Route.post('/team', 'TeamsController.store')
+  Route.put('/team/:id', 'TeamsController.update')
+  Route.delete('/team/:id', 'TeamsController.destroy')
 }).prefix('/api')
