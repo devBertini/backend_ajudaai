@@ -28,7 +28,7 @@ export default class EnterprisesController {
       if (enterprise) {
         response.status(200).send(enterprise)
       } else {
-        response
+        return response
           .status(400)
           .send({ error: 'Unable to fetch the enterprise entered. Please try again later.' })
       }
@@ -44,7 +44,7 @@ export default class EnterprisesController {
       const enterprise = await Enterprise.find(request.param('id'))
 
       if (!enterprise) {
-        response.status(404).send({
+        return response.status(404).send({
           warning:
             'The enterprise entered in the search was not found. Please check and try again.',
         })
@@ -71,7 +71,7 @@ export default class EnterprisesController {
       if (await enterprise.save()) {
         response.status(200).send(enterprise)
       } else {
-        response
+        return response
           .status(400)
           .send({ error: 'Unable to update the informed enterprise. Please try again later.' })
       }
