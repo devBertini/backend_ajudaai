@@ -1,10 +1,10 @@
 <table align="center"><tr><td align="center" width="9999">
 <h1 align="center">
-    <img alt="Desligamento Financeiro" title="#Desligamento Financeiro" src="https://www.significadofacil.com/wp-content/uploads/2019/04/business-1000x500.jpg" />
+    <img alt="Ajudaaí" title="#Ajudaaí" src="https://www.significadofacil.com/wp-content/uploads/2019/04/business-1000x500.jpg" />
 </h1>
 
 <h4 align="center"> 
-	 Backend - Ajudaa[i 🚀<br> v0.2 <br><br> 🚧 em construção... 🚧
+	 Backend - Ajudaaí 🚀<br> v0.2 <br><br> 🚧 em construção... 🚧
 </h4>
 
 <p align="center">
