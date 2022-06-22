@@ -25,6 +25,18 @@ export default class DepartmentsController {
 
     await Enterprise.findOrFail(enterprise)
 
+    const search = await Department.query()
+      .where('name', name)
+      .where('enterprise', enterprise)
+      .first()
+
+    if (search) {
+      return response.status(400).send({
+        error:
+          'The informed department is already registered in the company. Please try again later.',
+      })
+    }
+
     try {
       const department = await Department.create({
         name,
