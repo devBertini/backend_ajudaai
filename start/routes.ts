@@ -32,4 +32,11 @@ Route.group(() => {
   Route.post('/user', 'UsersController.store')
   Route.put('/user/:id', 'UsersController.update')
   Route.delete('/user/:id', 'UsersController.destroy')
+
+  //Status Routes
+  Route.get('/status', 'StatusesController.index')
+  Route.get('/status/:id', 'StatusesController.show')
+  Route.post('/status', 'StatusesController.store')
+  Route.put('/status/:id', 'StatusesController.update')
+  Route.delete('/status/:id', 'StatusesController.destroy')
 }).prefix('/api')
