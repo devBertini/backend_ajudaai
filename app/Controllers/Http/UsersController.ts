@@ -2,8 +2,8 @@ import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Database from '@ioc:Adonis/Lucid/Database'
 import Team from 'App/Models/Team'
 import User from 'App/Models/User'
-import CreateUserValidator from 'App/Validators/Users/CreateUserValidator'
-import UpdateUserValidator from 'App/Validators/Users/UpdateUserValidator'
+import CreateUserValidator from 'App/Validators/User/CreateUserValidator'
+import UpdateUserValidator from 'App/Validators/User/UpdateUserValidator'
 
 export default class UsersController {
   public async index({ request, response }: HttpContextContract) {
