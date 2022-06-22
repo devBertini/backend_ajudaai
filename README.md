@@ -97,7 +97,7 @@ Lista das próximas features a serem implementadas:
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js][nodejs].<br>
 Caso queira, pode-se utilizar também o [Docker](https://eslint.org/) (neste caso, não é necessário instalar o Nodejs).<br>
-Além disso, é bom ter um editor para trabalhar com o código como o [VSCode][vscode]
+Além disso, pode ajudar batente possuir um bom editor para trabalhar com o código como o [VSCode][vscode].
 
 ### :game_die: Rodando o Backend (Docker)
 
