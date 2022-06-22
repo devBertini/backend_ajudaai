@@ -74,7 +74,55 @@ export default class HelpsController {
     }
   }
 
-  public async update({ request, response }: HttpContextContract) {}
+  public async update({ request, response }: HttpContextContract) {
+    const { description, solution, activity, user, team, helper, status } = await request.validate(
+      UpdateHelpValidator
+    )
+
+    const help = await Help.findOrFail(request.param('id'))
+
+    try {
+      if (description && description !== help.description) {
+        help.description = description
+      }
+
+      if (solution && solution !== help.solution) {
+        help.solution = solution
+      }
+
+      if (activity && activity !== help.activity) {
+        help.activity = activity
+      }
+
+      if (user && user !== help.user) {
+        help.user = user
+      }
+
+      if (team && team !== help.team) {
+        help.team = team
+      }
+
+      if (helper && helper !== help.helper) {
+        help.helper = helper
+      }
+
+      if (status && status !== help.status) {
+        help.status = status
+      }
+
+      if (await help.save()) {
+        response.status(200).send(help)
+      } else {
+        return response
+          .status(400)
+          .send({ error: 'Unable to update the informed help. Please try again later.' })
+      }
+    } catch (error) {
+      response
+        .status(500)
+        .send({ error: 'Unable to update the informed help. Please try again later.' })
+    }
+  }
 
   public async destroy({ request, response }: HttpContextContract) {
     const help = await Help.find(request.param('id'))
