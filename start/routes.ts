@@ -41,7 +41,7 @@ Route.group(() => {
   Route.delete('/status/:id', 'StatusesController.destroy')
 
   //Help Routes
-  Route.get('/help', 'HelpsController.index')
+  Route.get('/help/:team_id', 'HelpsController.index')
   Route.get('/help/:id', 'HelpsController.show')
   Route.post('/help', 'HelpsController.store')
   Route.put('/help/:id', 'HelpsController.update')

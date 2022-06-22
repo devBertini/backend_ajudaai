@@ -29,7 +29,6 @@ export default class HelpsController {
 
     await Team.findOrFail(team)
     await User.findOrFail(user)
-    await User.findOrFail(helper)
     await Status.findOrFail(status)
 
     try {
