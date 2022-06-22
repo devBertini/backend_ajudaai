@@ -42,7 +42,7 @@ Route.group(() => {
 
   //Help Routes
   Route.get('/help/:team_id', 'HelpsController.index')
-  Route.get('/help/:id', 'HelpsController.show')
+  Route.get('/help/:team_id/:id', 'HelpsController.show')
   Route.post('/help', 'HelpsController.store')
   Route.put('/help/:id', 'HelpsController.update')
   Route.delete('/help/:id', 'HelpsController.destroy')
