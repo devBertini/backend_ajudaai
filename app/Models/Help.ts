@@ -6,10 +6,13 @@ export default class Help extends BaseModel {
   public id: number
 
   @column()
-  public title: string
+  public description: string
 
   @column()
-  public description: string
+  public solution: string
+
+  @column()
+  public activity: string
 
   @column()
   public user: number
@@ -19,6 +22,9 @@ export default class Help extends BaseModel {
 
   @column()
   public helper: number
+
+  @column()
+  public status: number
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
