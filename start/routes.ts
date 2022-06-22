@@ -39,4 +39,11 @@ Route.group(() => {
   Route.post('/status', 'StatusesController.store')
   Route.put('/status/:id', 'StatusesController.update')
   Route.delete('/status/:id', 'StatusesController.destroy')
+
+  //Help Routes
+  Route.get('/help/:team_id', 'HelpsController.index')
+  Route.get('/help/:team_id/:id', 'HelpsController.show')
+  Route.post('/help', 'HelpsController.store')
+  Route.put('/help/:id', 'HelpsController.update')
+  Route.delete('/help/:id', 'HelpsController.destroy')
 }).prefix('/api')
