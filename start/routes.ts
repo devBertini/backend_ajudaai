@@ -33,7 +33,7 @@ Route.group(() => {
   Route.delete('/enterprise/:id', 'EnterprisesController.destroy')
 
   //Department Routes
-  Route.get('/department', 'DepartmentsController.index')
+  Route.get('/department/:enterprise_id', 'DepartmentsController.index')
   Route.get('/department/:id', 'DepartmentsController.show')
   Route.post('/department', 'DepartmentsController.store')
   Route.put('/department/:id', 'DepartmentsController.update')
