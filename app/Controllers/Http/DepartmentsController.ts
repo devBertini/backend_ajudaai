@@ -3,6 +3,7 @@ import Database from '@ioc:Adonis/Lucid/Database'
 import Department from 'App/Models/Department'
 import Enterprise from 'App/Models/Enterprise'
 import CreateDepartmentValidator from 'App/Validators/Department/CreateDepartmentValidator'
+import UpdateDepartmentValidator from 'App/Validators/Department/UpdateDepartmentValidator'
 
 export default class DepartmentsController {
   public async index({ request, response }: HttpContextContract) {
