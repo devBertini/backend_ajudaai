@@ -37,15 +37,24 @@
 </h3>
 </td></tr></table>
 
-Não é de hoje que a comunicação é um problema no mundo. Seja ela em nossa residência, no trabalho, e até mesmo em eventos.<br>
-Esse processo é um problema que há muito tempo é tentado solucionar, mas sempre sem sucesso.<br><br>
-E não difere dentro de um ambiente empresarial onde pessoas precisam se comunicar com outras pessoas, da mesma e<br>
-de outras áreas. Possuindo entendimentos, vivência, conhecimentos totalmente diferentes uma das outras.
+Desde os primórdios, a comunicação é um processo social básico que permite a troca de informações entre dois ou mais indivíduos. Porém, é uma tarefa árdua devido a complexidade que pode se tornar, principalmente no ramo empresarial. Uma falha de comunicação pode atrasar um projeto, entregar algo que não era necessário e até mesmo perder o cliente.
 
-Esse projeto veio para auxiliar neste problema, tendo o foco ajudar com impedimentos que o time possa estar tendo e, com auxílio da<br>
-equipe e da área, conseguir melhorar o tempo de entregas e resolução de problemas.
+Com base nisso e na vivência como desenvolvedor, nasceu a ideia do sistema Ajudaaí. O intuito deste é, melhorar a comunicação de impeditivos e possibilitar o auxílio seja de um colega da área, o Product Owner (PO), Coordenador e até mesmo o Gerente. <br>Com essa exaltação de problema, todo o time estará ciente e poderão auxiliar para que o processo caminhe mais rapidamente. <br>(E claro, estamos falando de uma ideia inicial. Nada impede que seja estendido à diversas áreas da empresa e isso transforme a velocidade de resolução ainda mais.)
 
-Esse sistema foi idealizado com a tentativa de solucionar um problema vivido recorrentemente no ambiente corporativo.<br>
+Mas ok, você deve se perguntar o que difere isso de um ticket(chamado) normalmente utilizado.
+
+Então, se liga neste exemplo a seguir:
+
+Eu como desenvolvedor, recebi um projeto para construir uma interface onde será possível cadastrar e consultar alguns clientes dessa mesma empresa. Pois bem, com o desenvolvimento iniciado, o computador corporativo parou de funcionar.
+ 
+<b>(Alerta!! Agora, o projeto estará parado devido ao impedimento de equipamento)</b><br>
+Comumente, será aberto um chamado informado o problema. Após chegar no SLA (Acordo de Nível de Serviço) da equipe que cuida deste problema, agendará com você a entrega da máquina para que verifiquem e concerte. Após isso, será respondido que ficou pronta e pode buscar. 
+
+E não está errado esse processo, é necessário esse controle pois pode ser grande o número de serviços recebidos para resolução. Mas, e o projeto que iniciamos e está parado agora? Como está o cliente em relação a isso?
+
+E então, entra nosso novo sistema. O processo de chamados continua normalmente, porém com a adição deste novo alerta, toda a equipe/área estará ciente e por exemplo, a PO ou o Gestor poderá negociar diretamente com a outra área responsável uma prioridade do serviço uma vez que impacta uma entrega que possa ser um importante solucionador de problema para o cliente.
+
+E isso é só a ideia inicial. Nada impede que esse impeditivo, após informado, o Gestor aprove e vá diretamente a informação para a outra área priorizar. As possibilidades são grandes, você decide como pode funcionar no seu ambiente. (:
 
 <b>A proposta deste projeto é</b>
 - Melhoria de comunicação entre os integrantes da equipe;
@@ -179,7 +188,7 @@ $ node ace test
 
 ## :memo: Licença
 
-Este projeto esta sobe a licença CC BY-NC-SA 3.0 BR <br>(Creative Commons: Atribuição-NãoComercial-CompartilhaIgual 3.0 Brasil). <img alt="License" src="https://img.shields.io/badge/license-CC%20BY--NC--SA%203.0-brightgreen">
+Este projeto esta sobe a licença CC BY-NC-SA 3.0 BR <br>(Creative Commons: Atribuição-NãoComercial-CompartilhaIgual 3.0 Brasil). <br><img alt="License" src="https://img.shields.io/badge/license-CC%20BY--NC--SA%203.0-brightgreen">
 
 ## Autor
 
