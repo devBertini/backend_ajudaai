@@ -1,6 +1,7 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Database from '@ioc:Adonis/Lucid/Database'
 import Enterprise from 'App/Models/Enterprise'
+import CreateEnterpriseValidator from 'App/Validators/Enterprise/CreateEnterpriseValidator'
 
 export default class EnterprisesController {
   public async index({ request, response }: HttpContextContract) {
@@ -16,7 +17,7 @@ export default class EnterprisesController {
   }
 
   public async store({ request, response }: HttpContextContract) {
-    const { name } = request.body()
+    const { name } = await request.validate(CreateEnterpriseValidator)
 
     try {
       const enterprise = await Enterprise.create({
