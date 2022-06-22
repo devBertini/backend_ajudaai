@@ -20,6 +20,15 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/api/', async () => {
-  return { Route: 'Unused Route' }
-})
+Route.group(() => {
+  Route.get('/', async () => {
+    return { Route: 'Unused Route' }
+  })
+
+  //Enterprise Routes
+  Route.get('/enterprise', 'EnterprisesController.index')
+  Route.get('/enterprise/:id', 'EnterprisesController.show')
+  Route.post('/enterprise', 'EnterprisesController.store')
+  Route.put('/enterprise/:id', 'EnterprisesController.update')
+  Route.delete('/enterprise/:id', 'EnterprisesController.destroy')
+}).prefix('/api')
