@@ -48,7 +48,7 @@ Então, se liga neste exemplo a seguir:
 Eu como desenvolvedor, recebi um projeto para construir uma interface onde será possível cadastrar e consultar alguns clientes dessa mesma empresa. Pois bem, com o desenvolvimento iniciado, o computador corporativo parou de funcionar.
  
 <b>(Alerta!! Agora, o projeto estará parado devido ao impedimento de equipamento)</b><br>
-Comumente, será aberto um chamado informado o problema. Após chegar no SLA (Acordo de Nível de Serviço) da equipe que cuida deste problema, agendará com você a entrega da máquina para que verifiquem e concerte. Após isso, será respondido que ficou pronta e pode buscar. 
+Comumente, será aberto um chamado informado o problema. Após chegar no SLA (Acordo de Nível de Serviço) da equipe que cuida deste problema, agendará com você a entrega da máquina para que verifiquem e conserte. Após isso, será respondido que ficou pronta e pode buscar. 
 
 E não está errado esse processo, é necessário esse controle pois pode ser grande o número de serviços recebidos para resolução. Mas, e o projeto que iniciamos e está parado agora? Como está o cliente em relação a isso?
 
